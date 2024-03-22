@@ -27,7 +27,7 @@
             <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onKivalasztClick" text="Kiválaszt" VBox.vgrow="ALWAYS" />
          </children>
       </VBox>
-      <Pane fx:id="pane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: lightgreen; -fx-border-color: black; -fx-border-width: 5 1;">
+      <Pane fx:id="pane" onMouseMoved="#onMouseMoved" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: lightgreen; -fx-border-color: black; -fx-border-width: 5 1;">
          <children>
             <Line endX="500.0" endY="700.0" startX="500.0" startY="5.0" />
             <Label fx:id="playerScore" layoutX="400.0" layoutY="10.0" text="0">
@@ -40,17 +40,17 @@
                   <Font name="Arial Black" size="96.0" />
                </font>
             </Label>
-            <ImageView fx:id="ball" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" x="468.0" y="300.0">
+            <ImageView fx:id="ball" fitHeight="64.0" fitWidth="64.0" layoutX="500.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" x="-32.0" y="-32.0">
                <image>
                   <Image url="@icons/labda4.png" />
                </image>
             </ImageView>
-            <Label fx:id="playerDisplayName" alignment="CENTER" layoutX="30.0" layoutY="350.0" prefHeight="30.0" prefWidth="140.0" rotate="-90.0" style="-fx-background-color: lightblue; -fx-text-fill: blue; -fx-background-radius: 10; -fx-border-color: blue; -fx-border-radius: 10;" text="Szerver" translateX="-70.0" translateY="-15.0">
+            <Label fx:id="playerDisplayName" alignment="CENTER" layoutX="40.0" layoutY="350.0" prefHeight="40.0" prefWidth="140.0" rotate="-90.0" style="-fx-background-color: lightblue; -fx-text-fill: blue; -fx-background-radius: 10; -fx-border-color: blue; -fx-border-radius: 10;" text="Szerver" translateX="-70.0" translateY="-15.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="clientDisplayName" alignment="CENTER" layoutX="970.0" layoutY="350.0" prefHeight="30.0" prefWidth="140.0" rotate="90.0" style="-fx-background-color: #ffeeee; -fx-text-fill: red; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" text="Kliens" translateX="-70.0" translateY="-15.0">
+            <Label fx:id="clientDisplayName" alignment="CENTER" layoutX="960.0" layoutY="350.0" prefHeight="40.0" prefWidth="140.0" rotate="90.0" style="-fx-background-color: #ffeeee; -fx-text-fill: red; -fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" text="Kliens" translateX="-70.0" translateY="-15.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
